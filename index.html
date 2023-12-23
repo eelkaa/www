@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React JS</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="http://localhost:7073/js/index.js" type="text/babel"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Добавьте следующий скрипт для подключения вашего JavaScript-файла -->
+    <script type="text/babel">
+        const App = () => {
+    return (
+      <div>
+        <h1>Ваше приложение</h1>
+        <TreeView />
+      </div>
+    );
+  };
+
+  // Рендеринг React-приложения
+  ReactDOM.render(<App />, document.getElementById('root'));
+</script>
+</body>
+</html>
